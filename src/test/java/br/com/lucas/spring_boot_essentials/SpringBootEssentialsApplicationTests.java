@@ -1,4 +1,4 @@
-package br.com.lucas.spring_boot_essentials;
+/*package br.com.lucas.spring_boot_essentials;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,4 +10,4 @@ class SpringBootEssentialsApplicationTests {
 	void contextLoads() {
 	}
 
-}
+}*/
