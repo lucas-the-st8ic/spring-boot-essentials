@@ -8,7 +8,27 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/v1/hello")
 public class HelloWorldController {
 
- /*   @GetMapping
+    @GetMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public String get1(@PathVariable("id") String id) {
+        return "Hello, World! " +id;
+    }
+
+    @GetMapping("")
+    @ResponseStatus(HttpStatus.OK)
+    public String get2() {
+        return "Hello, World! GET";
+    }
+
+    @GetMapping("/new")
+    @ResponseStatus(HttpStatus.CREATED)
+    public String get1() {
+        return "Hello, World! POST";
+    }
+
+}
+
+/*   @GetMapping
     public String helloWorld() {
         return "Hello World";
     }*/
@@ -28,10 +48,3 @@ public class HelloWorldController {
     public String get() {
         return "Hello, World!";
     }*/
-
-    @GetMapping
-    @ResponseStatus(HttpStatus.OK)
-    public String get() {
-        return "Hello, World!";
-    }
-}
